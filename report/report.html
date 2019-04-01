@@ -19004,6 +19004,12 @@ Test Accuracy: 87% (728/836)
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> (Three possible points for improvement)</p>
+<ul>
+<li>Becuase some breeds are hard to identify (the mastiffs for example). I can use more data augmentation in my algorithm if the data is limited. More rotations and flips that won't affect. Generating more data using data augmentation</li>
+<li>Also I didn't use any normalizations for my images. When loading the images, I can normalize the image similar to the model I use ResNet50. I can look up what kind of distribution of images the pretained network has.</li>
+<li>Currently my model stops improving after epoch 12 or so. I can add more fc layers and train with more epochs (may be this will improve, but not sure).</li>
+<li>I can definitely use more advanced and deeper architecture such as ResNet152, which is much deeper than ResNet50. It will requires more data augmentation and training time but should outperform what I have now.</li>
+</ul>
 
 </div>
 </div>
